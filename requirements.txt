@@ -5,7 +5,7 @@ certifi==2023.7.22
 cffi==1.16.0
 charset-normalizer==3.3.0
 click==8.1.7
-colorama @ file:///C:/b/abs_a9ozq0l032/croot/colorama_1672387194846/work
+colorama==0.4.6
 cryptography==41.0.5
 Flask==3.0.0
 Flask-OAuthlib==0.9.6
@@ -13,11 +13,12 @@ flask-oidc==2.1.0
 Flask-Session==0.5.0
 idna==3.4
 itsdangerous==2.1.2
-Jinja2 @ file:///C:/b/abs_7cdis66kl9/croot/jinja2_1666908141852/work
+Jinja2==3.1.2
 lxml==4.9.3
-MarkupSafe @ file:///C:/ci/markupsafe_1654508036328/work
+MarkupSafe==2.1.1
 msal==1.24.1
 oauthlib==2.1.0
+pip==23.3
 pycparser==2.21
 PyJWT==2.8.0
 PyPDF2==3.0.1
@@ -25,6 +26,8 @@ python-docx==1.0.1
 python-dotenv==1.0.0
 requests==2.31.0
 requests-oauthlib==1.1.0
+setuptools==68.0.0
 typing_extensions==4.8.0
 urllib3==2.0.7
 Werkzeug==3.0.1
+wheel==0.41.2
