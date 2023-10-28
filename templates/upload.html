@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h2>Upload Documents</h2>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" multiple>
+        <input type="submit" value="Upload" class="btn btn-primary mt-2">
+    </form>
+    <a href="/" class="btn btn-secondary mt-2">Back</a>
+    <a href="/logout" class="btn btn-danger mt-2">Logout</a>
+</div>
+</body>
+</html>
