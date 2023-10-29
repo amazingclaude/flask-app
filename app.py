@@ -4,7 +4,7 @@ from werkzeug.utils import secure_filename
 import PyPDF2
 from docx import Document
 # Replace these placeholders with your actual values
-TENANT = "platformzispire"
+TENANT = "zispireplatform"
 POLICY = "B2C_1_susi"
 
 
