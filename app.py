@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, make_response
+from flask import Flask, render_template, request, redirect, url_for, flash, make_response,session
 import os
 from werkzeug.utils import secure_filename
 import PyPDF2
@@ -63,7 +63,7 @@ def draft():
 def logout():
     # Clear server-side session data (if applicable)
     session.clear()
-    
+
     redirect_uri = "https%3A%2F%2Fwww.zispire.com%2F"
     logout_url = f"https://{TENANT}.b2clogin.com/{TENANT}.onmicrosoft.com/{POLICY}/oauth2/v2.0/logout?post_logout_redirect_uri={redirect_uri}&client_id={CLIENT_ID}"
     
