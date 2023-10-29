@@ -61,12 +61,14 @@ def draft():
 
 @app.route('/logout')
 def logout():
+    # Clear server-side session data (if applicable)
+    session.clear()
+    
     redirect_uri = "https%3A%2F%2Fwww.zispire.com%2F"
     logout_url = f"https://{TENANT}.b2clogin.com/{TENANT}.onmicrosoft.com/{POLICY}/oauth2/v2.0/logout?post_logout_redirect_uri={redirect_uri}&client_id={CLIENT_ID}"
     
     # Create a response object with the redirection
     response = make_response(redirect(logout_url))
-
     # Clear all cookies
     for key in request.cookies:
         response.delete_cookie(key)
