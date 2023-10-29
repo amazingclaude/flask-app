@@ -6,7 +6,7 @@ from docx import Document
 # Replace these placeholders with your actual values
 TENANT = "zispireplatform"
 POLICY = "B2C_1_susi"
-
+CLIENT_ID="5dee48fb-d8b4-443f-b625-598b4fd259e5"
 
 
 app = Flask(__name__)
@@ -62,7 +62,7 @@ def draft():
 @app.route('/logout')
 def logout():
     redirect_uri = "https%3A%2F%2Fwww.zispire.com%2F"
-    logout_url = f"https://{TENANT}.b2clogin.com/{TENANT}.onmicrosoft.com/{POLICY}/oauth2/v2.0/logout?post_logout_redirect_uri={redirect_uri}"
+    logout_url = f"https://{TENANT}.b2clogin.com/{TENANT}.onmicrosoft.com/{POLICY}/oauth2/v2.0/logout?post_logout_redirect_uri={redirect_uri}&client_id={CLIENT_ID}"
     return redirect(logout_url)
 
 if __name__ == '__main__':
